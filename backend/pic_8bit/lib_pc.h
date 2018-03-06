@@ -1,4 +1,3 @@
-#ifdef PC_FAKE
 #ifndef LIB_PC_H_INCLUDED
 #define LIB_PC_H_INCLUDED
 
@@ -12,4 +11,3 @@ int f_pc_out_toggel(pin *self);
 
 
 #endif // LIB_PC_H_INCLUDED
-#endif

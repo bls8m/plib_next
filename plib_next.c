@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+#define PC_FAKE
 #include "backend/pc_fake/lib_pc.h"
 //....
 #define GPIO_INPUTS_MAX  20
@@ -245,3 +245,15 @@ int pin_get_pull(pin *pin)
 	return 0;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+

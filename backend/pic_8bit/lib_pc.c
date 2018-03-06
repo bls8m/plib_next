@@ -1,6 +1,3 @@
-#include "lib_pc.h"
-#include "../../plib_next.h"
-#ifdef PC_FAKE
 #include "../../plib_next.h"
 #include "lib_pc.h"
 
@@ -85,17 +82,3 @@ int f_pc_out_toggel( pin *self)
     printf("toggel_get,%c,%d : %d\n",self->addr.PORT,self->addr.PIN,state);
     return state;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-#endif

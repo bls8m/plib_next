@@ -5,6 +5,9 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="backend" displayName="backend" projectFiles="true">
+        <logicalFolder name="atmel_avr" displayName="atmel_avr" projectFiles="true">
+          <itemPath>backend/atmel_avr/lib_atmegaxxx.h</itemPath>
+        </logicalFolder>
         <logicalFolder name="pc_fake" displayName="pc_fake" projectFiles="true">
           <itemPath>backend/pc_fake/lib_pc.h</itemPath>
         </logicalFolder>
@@ -19,6 +22,9 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="backend" displayName="backend" projectFiles="true">
+        <logicalFolder name="atmel_avr" displayName="atmel_avr" projectFiles="true">
+          <itemPath>backend/atmel_avr/lib_atmegaxxx.c</itemPath>
+        </logicalFolder>
         <logicalFolder name="pc_fake" displayName="pc_fake" projectFiles="true">
           <itemPath>backend/pc_fake/lib_pc.c</itemPath>
         </logicalFolder>
@@ -54,6 +60,10 @@
           <standard>10</standard>
         </cTool>
       </compileType>
+      <item path="backend/atmel_avr/lib_atmegaxxx.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="backend/atmel_avr/lib_atmegaxxx.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="backend/pc_fake/lib_pc.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="backend/pc_fake/lib_pc.h" ex="false" tool="3" flavor2="0">
@@ -86,6 +96,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="backend/atmel_avr/lib_atmegaxxx.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="backend/atmel_avr/lib_atmegaxxx.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="backend/pc_fake/lib_pc.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="backend/pc_fake/lib_pc.h" ex="false" tool="3" flavor2="0">

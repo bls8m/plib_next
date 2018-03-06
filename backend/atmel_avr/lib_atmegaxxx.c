@@ -1,8 +1,8 @@
-#include "lib_pc.h"
+#include "lib_atmegaxxx.h"
 #include "../../plib_next.h"
-#ifdef PC_FAKE
+#ifdef ATMEAGAXXX
 #include "../../plib_next.h"
-#include "lib_pc.h"
+#include "lib_atmegaxxx.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -85,8 +85,6 @@ int f_pc_out_toggel( pin *self)
     printf("toggel_get,%c,%d : %d\n",self->addr.PORT,self->addr.PIN,state);
     return state;
 }
-
-
 
 
 

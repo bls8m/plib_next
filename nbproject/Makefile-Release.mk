@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/backend/atmel_avr/lib_atmegaxxx.o \
 	${OBJECTDIR}/backend/pc_fake/lib_pc.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/plib_next.o
@@ -63,6 +64,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/plib_next.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/plib_next ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/backend/atmel_avr/lib_atmegaxxx.o: backend/atmel_avr/lib_atmegaxxx.c
+	${MKDIR} -p ${OBJECTDIR}/backend/atmel_avr
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/backend/atmel_avr/lib_atmegaxxx.o backend/atmel_avr/lib_atmegaxxx.c
 
 ${OBJECTDIR}/backend/pc_fake/lib_pc.o: backend/pc_fake/lib_pc.c
 	${MKDIR} -p ${OBJECTDIR}/backend/pc_fake

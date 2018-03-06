@@ -1,4 +1,4 @@
-#ifdef PC_FAKE
+#ifdef ATMEAGAXXX
 #ifndef LIB_PC_H_INCLUDED
 #define LIB_PC_H_INCLUDED
 
